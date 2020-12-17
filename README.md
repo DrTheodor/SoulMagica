@@ -1,3 +1,3 @@
-<p align="center"><img src="https://github.com/DrTheodor/SoulMagica/tree/master/src/main/resources/assets/soulm/textures/SoulMagicaLogo.png"></p>
+<p align="center"><img src="https://drive.google.com/uc?export=download&id=13HR0EEZJFxbxduijHeSOyAN8IgmSXGfJ"></p>
 # SoulMagica
 Minecraft Mod
