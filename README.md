@@ -9,7 +9,7 @@ It's developed by **DrTheodor** and **Enoken-crypto**.
 <p align="center"><font size="5">Next Update(Release) will include: </font></p>
 
 
-- [ ] New fractions — Black Magic, Gray Magic(Neutral), White magic.
+- [ ] New fractions — Dark Magic, Gray Magic(Neutral), Light magic.
 - [ ] Guide Book(such in Thaumcraft)
 - [ ] Recipes and other things.
 - [ ] Load mod to [CurseForge](https://www.curseforge.com/minecraft/mc-mods)
