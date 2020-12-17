@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aba",
+    "gcg",
+    "ded"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "b":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "c":
+    {
+      "item": "minecraft:glowstone"
+    },
+    "d":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "e":
+    {
+      "item": "minecraft:polished_blackstone_brick_slab"
+    },
+    "g":
+    {
+      "item": "minecraft:polished_blackstone_brick_wall"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:pentagram_altar",
+    "count": 1
+  }
+}

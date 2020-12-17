@@ -1,0 +1,12 @@
+{
+  "disc.unknown_disc_1": {
+    "category": "disс",
+    "subtitle": "unknown_disc_1",
+    "sounds": [
+      {
+        "name": "soulm:disс/unknown_disc_1",
+        "stream": true
+      }
+    ]
+  }
+}

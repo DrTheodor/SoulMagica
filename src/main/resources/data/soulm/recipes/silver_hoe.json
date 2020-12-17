@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxa",
+    "aya",
+    "aya"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "soulm:silver_ingot"
+    },
+    "y":
+    {
+      "item": "minecraft:stick"
+    },
+    "a":
+    {
+      "item": "minecraft:air"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:silver_hoe",
+    "count": 1
+  }
+}

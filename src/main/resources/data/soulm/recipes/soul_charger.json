@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "axa",
+    "zyz",
+    "aca"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "soulm:silver_ingot"
+    },
+    "y":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "a":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "z":
+    {
+      "item": "minecraft:nether_brick"
+    },
+    "c":
+    {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:soul_cahrger",
+    "count": 1
+  }
+}
