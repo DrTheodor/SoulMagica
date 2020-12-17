@@ -111,18 +111,24 @@ public class NecromantsWandItem extends Item {
         RayTraceResult result = this.rayTrace(worldIn, playerIn);
         if (!worldIn.isRemote) {
             if (result instanceof RayTraceResult) {
-                double d1 = 4.0D;
-                Vector3d vec3d = playerIn.getLook(1.0F);
-                double d2 = playerIn.getPosX() - (playerIn.getPosX() + vec3d.x * 4.0D);
-                double d3 = playerIn.getPosYHeight(0.5D) - (0.5D + playerIn.getPosYHeight(0.5D));
-                double d4 = playerIn.getPosZ() - (playerIn.getPosZ() + vec3d.z * 4.0D);
-                worldIn.playEvent((PlayerEntity) null, 1016, new BlockPos(playerIn.getPosition()), 0);
-                //234, 243, 423, 432, 324, 342
-                FireballEntity fireballentity = new FireballEntity(worldIn, playerIn, -d2, -d3, -d4);
-                fireballentity.explosionPower = 3;
-                fireballentity.setPosition(playerIn.getPosX() + vec3d.x * 4.0D, playerIn.getPosYHeight(0.5D) + 0.5D, fireballentity.getPosZ() + vec3d.z * 4.0D);
-                worldIn.addEntity(fireballentity);
-                return ActionResult.resultSuccess(new ItemStack(Registration.NECROMANTS_WAND.get()));
+                if (result.getType() == RayTraceResult.Type.ENTITY) {
+                        double d1 = 4.0D;
+                        Vector3d vec3d = playerIn.getLook(1.0F);
+                        double d2 = playerIn.getPosX() - (playerIn.getPosX() + vec3d.x * 4.0D);
+                        double d3 = playerIn.getPosYHeight(0.5D) - (0.5D + playerIn.getPosYHeight(0.5D));
+                        double d4 = playerIn.getPosZ() - (playerIn.getPosZ() + vec3d.z * 4.0D);
+                        worldIn.playEvent((PlayerEntity) null, 1016, new BlockPos(playerIn.getPosition()), 0);
+                        //234, 243, 423, 432, 324, 342
+                        FireballEntity fireballentity = new FireballEntity(worldIn, playerIn, -d2, -d3, -d4);
+                        fireballentity.explosionPower = 3;
+                        fireballentity.setPosition(playerIn.getPosX() + vec3d.x * 4.0D, playerIn.getPosYHeight(0.5D) + 0.5D, fireballentity.getPosZ() + vec3d.z * 4.0D);
+                        worldIn.addEntity(fireballentity);
+                        if (playerIn.getHeldItem(handIn).equals(new ItemStack(Registration.NECROMANTS_WAND.get()))) {
+                            return ActionResult.resultSuccess(new ItemStack(Registration.NECROMANTS_WAND.get()));
+                        } else {
+                            return ActionResult.resultSuccess(new ItemStack(Registration.NECROMANTS_WAND_1.get()));
+                        }
+                }
             }
         }
 
@@ -135,11 +141,7 @@ public class NecromantsWandItem extends Item {
         PlayerEntity player = context.getPlayer(); // получение игрока
         BlockPos pos = context.getPos(); // получить позицию блока
         if(context.getItem() == Registration.NECROMANTS_WAND_1.get().getDefaultInstance()) {
-            if (player.getHeldItem(Hand.MAIN_HAND).getItem() == (Registration.NECROMANTS_WAND_1.get())) {
                 enableFly(player);
-            } else {
-                disableFly(player);
-            }
         }
 
         //context.getFace(); // получить сторону блока
