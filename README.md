@@ -1,5 +1,5 @@
 <p align="center"><img width="75%" height="75%" src="https://drive.google.com/uc?export=download&id=1FGyLp7TwLzimP_4yHaoSeStGXqgnVssC"></p>
-<p align="center"><a href="https://discord.gg/EpeWpKBxjD"><img src="https://i.imgur.com/CYxKg5M.png"></a></p>
+<p align="center"><a href="https://discord.gg/wqPdBHU2Nd"><img src="https://i.imgur.com/CYxKg5M.png"></a></p>
 
 **Soul Magica** is a minecraft mod that adds **magic** to the Minecraft.
 
