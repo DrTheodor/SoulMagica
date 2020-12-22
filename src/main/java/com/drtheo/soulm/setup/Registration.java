@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class Registration {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SoulMagica.MOD_ID);
-
+    public static boolean flyOn = false;
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SoulMagica.MOD_ID);
 
@@ -38,8 +38,11 @@ public class Registration {
     public static final RegistryObject<Item> NECROMANTS_WAND = ITEMS.register("necromants_wand",
             () -> new NecromantsWandItem(new Item.Properties().group(SoulMagica.TAB).setNoRepair().rarity(Rarity.EPIC).maxStackSize(1).maxDamage(5)));
     public static final RegistryObject<Item> NECROMANTS_WAND_1 = ITEMS.register("necromants_wand_1",
-            () -> new NecromantsWandItem(new Item.Properties().group(SoulMagica.TAB).setNoRepair().rarity(Rarity.EPIC).maxStackSize(1).maxDamage(5)));
+            () -> new NecromantsWandItem(new Item.Properties().group(SoulMagica.TAB).setNoRepair().rarity(Rarity.EPIC).maxStackSize(1).maxDamage(5).isImmuneToFire()));
     public static final RegistryObject<Item> DEBUG_WAND = ITEMS.register("debug_wand",
             () -> new DebugWandItem(new Item.Properties().group(SoulMagica.TAB).setNoRepair().rarity(Rarity.EPIC).maxStackSize(1).maxDamage(5)));
+    public static final RegistryObject<Item> HEALER_WAND = ITEMS.register("healer_wand",
+            () -> new HealerWandItem(new Item.Properties().group(SoulMagica.TAB).setNoRepair().rarity(Rarity.EPIC).maxStackSize(1).maxDamage(5).isImmuneToFire()));
+
     public static final RegistryObject<Item> PENTAGRAM_ALTAR_ITEM = ITEMS.register("pentagram_altar", () -> new BlockItem(BlockInit.PENTAGRAM_ALTAR.get(), new Item.Properties().group(SoulMagica.TAB)));
 }

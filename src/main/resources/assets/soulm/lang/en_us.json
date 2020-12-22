@@ -18,10 +18,14 @@
   "block.soulm.dark_planks": "Dark Planks",
   "block.soulm.dark_log": "Dark Log",
   "block.soulm.dark_log_full": "Dark Log Full",
-  "item.soulm.dark_metal": "Dark Metal",
-  "item.soulm.necromants_wand": "Necromants Wand",
+  "item.soulm.dark_metal": "§kdark§r Metal",
+  "item.soulm.necromants_wand": "§lNecromants Wand§r",
+  "item.soulm.necromants_wand_1": "§lNecromants Wand+§r",
   "item.soulm.necromants_hood": "Necromants Hood",
   "item.soulm.necromants_chestplate": "Necromants Chestplate",
   "item.soulm.necromants_leggins": "Necromants Leggins",
-  "item.soulm.necromants_boots": "Necromants Boots"
+  "item.soulm.necromants_boots": "Necromants Boots",
+  "item.soulm.healer_wand": "§lLight Wand",
+  "item.soulm.unknown_disc_1": "§kunknown§r Disc",
+  "item.soulm.unknown_disc_1.desc": "The strange disc..."
 }

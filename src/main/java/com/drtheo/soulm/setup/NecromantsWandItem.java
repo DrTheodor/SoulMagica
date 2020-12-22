@@ -40,28 +40,18 @@ import java.util.concurrent.TimeUnit;
 
 public class NecromantsWandItem extends Item {
     public static final Logger LOGGER = LogManager.getLogger();
-    private static boolean flyOn = false;
 
     public NecromantsWandItem(Properties properties) {
         super(properties);
     }
 
-    @SubscribeEvent (priority = EventPriority.LOWEST)
-    public void onClientTick(TickEvent.ClientTickEvent event) throws Exception {
 
-        if(event.phase.equals(TickEvent.Phase.END)){
-            if(KeyBinds.MY_KEY_FIRST.isKeyDown()){
-                System.out.println("Key Pressed!");
-            }
-        }
-    }
-
-
+    private static DamageSource ds = new DamageSource("Vampirism");
 
     public void enableFly(PlayerEntity player) {
         player.abilities.allowFlying=true;
         player.abilities.isFlying = true;
-        flyOn = true;
+        Registration.flyOn = true;
     }
 
 
@@ -70,7 +60,7 @@ public class NecromantsWandItem extends Item {
         player.abilities.allowFlying = false;
         player.abilities.isFlying = false;
         player.abilities.disableDamage = false;
-        flyOn = false;
+        Registration.flyOn = false;
     }
 
 
@@ -106,7 +96,20 @@ public class NecromantsWandItem extends Item {
         return world.rayTraceBlocks(new RayTraceContext(eyePosition, endPosition, RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, player));
     }
 
+
     @Override
+    public ActionResultType itemInteractionForEntity(ItemStack stack, PlayerEntity playerIn, LivingEntity target, Hand hand) {
+        if (!playerIn.world.isRemote) {
+            target.attackEntityFrom(ds.setDamageBypassesArmor().setDamageIsAbsolute().setMagicDamage(), 4);
+            playerIn.heal(4);
+        }
+        return super.itemInteractionForEntity(stack, playerIn, target, hand);
+    }
+
+
+
+
+    /*@Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         RayTraceResult result = this.rayTrace(worldIn, playerIn);
         if (!worldIn.isRemote) {
@@ -123,7 +126,7 @@ public class NecromantsWandItem extends Item {
                         fireballentity.explosionPower = 3;
                         fireballentity.setPosition(playerIn.getPosX() + vec3d.x * 4.0D, playerIn.getPosYHeight(0.5D) + 0.5D, fireballentity.getPosZ() + vec3d.z * 4.0D);
                         worldIn.addEntity(fireballentity);
-                        if (playerIn.getHeldItem(handIn).equals(new ItemStack(Registration.NECROMANTS_WAND.get()))) {
+                        if (playerIn.getHeldItem(handIn) == new ItemStack(Registration.NECROMANTS_WAND.get())) {
                             return ActionResult.resultSuccess(new ItemStack(Registration.NECROMANTS_WAND.get()));
                         } else {
                             return ActionResult.resultSuccess(new ItemStack(Registration.NECROMANTS_WAND_1.get()));
@@ -133,15 +136,18 @@ public class NecromantsWandItem extends Item {
         }
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
-    }
+    } */
 
     @Nonnull
     @Override
     public ActionResultType onItemUse(ItemUseContext context) {
         PlayerEntity player = context.getPlayer(); // получение игрока
         BlockPos pos = context.getPos(); // получить позицию блока
-        if(context.getItem() == Registration.NECROMANTS_WAND_1.get().getDefaultInstance()) {
-                enableFly(player);
+        Hand handIn = context.getHand();
+        if(player.getHeldItem(handIn).getItem() == Registration.NECROMANTS_WAND_1.get() && !Registration.flyOn) {
+            System.out.println("Fly enabled!");
+            enableFly(player);
+            return ActionResultType.SUCCESS;
         }
 
         //context.getFace(); // получить сторону блока

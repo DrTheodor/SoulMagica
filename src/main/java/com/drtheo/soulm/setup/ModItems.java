@@ -17,7 +17,7 @@ public class ModItems {
     public static final RegistryObject<Item> SILVER_INGOT = Registration.ITEMS.register("silver_ingot", () ->
             new Item(new Item.Properties().group(SoulMagica.TAB)));
     public static final RegistryObject<Item> DARK_METAL = Registration.ITEMS.register("dark_metal", () ->
-            new Item(new Item.Properties().group(SoulMagica.TAB)));
+            new Item(new Item.Properties().group(SoulMagica.TAB).maxStackSize(16).rarity(Rarity.RARE)));
 
 
     //tools
