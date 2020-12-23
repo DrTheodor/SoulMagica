@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "cac",
+    "bab",
+    "bab"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:air"
+    },
+    "b":
+    {
+      "item": "soulm:magic_cloth"
+    },
+    "c":
+    {
+      "item": "soulm:dark_metal"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:necromants_boots",
+    "count": 1
+  }
+}

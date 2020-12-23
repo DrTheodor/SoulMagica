@@ -3,7 +3,7 @@
 	"textures": {
 		"6": "soulm:items/lense",
 		"7": "soulm:items/magic_nether_bricks",
-		"8": "soulm:items/dark_metal",
+		"8": "soulm:items/dark_obsidian",
 		"9": "soulm:items/magic_netherite_block"
 	},
 	"elements": [

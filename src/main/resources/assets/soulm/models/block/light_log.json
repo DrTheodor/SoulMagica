@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "soulm:blocks/light_log_top",
+    "side": "soulm:blocks/light_log"
+  }
+}

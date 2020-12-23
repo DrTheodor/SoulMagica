@@ -5,19 +5,11 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.shapes.IBooleanFunction;
-import net.minecraft.util.math.shapes.ISelectionContext;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
-import net.minecraft.world.IBlockReader;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.Optional;
 import java.util.function.Supplier;
-import java.util.stream.Stream;
 
 public class ModBlocks {
 
@@ -45,6 +37,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> DARK_LEAVES = register("dark_leaves",
             () -> new LeavesBlock(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
 
+    public static final RegistryObject<Block> LIGHT_PLANKS = register("light_planks",
+            () -> new Block(AbstractBlock.Properties.create(Material.NETHER_WOOD).hardnessAndResistance(2, 8).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LIGHT_LOG = register("light_log",
+            () -> new Block(AbstractBlock.Properties.create(Material.NETHER_WOOD).hardnessAndResistance(3, 10).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LIGHT_LOG_FULL = register("light_log_full",
+            () -> new Block(AbstractBlock.Properties.create(Material.NETHER_WOOD).hardnessAndResistance(3, 10).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LIGHT_LEAVES = register("light_leaves",
+            () -> new LeavesBlock(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
+
 
 
 
@@ -57,7 +58,7 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> ret = registerNoItem(name, block);
-        Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().group(SoulMagica.TAB)));
+        Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().group(SoulMagica.BASICS)));
         return ret;
     }
 }

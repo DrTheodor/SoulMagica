@@ -109,10 +109,24 @@ public class SoulMagica
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
-    public static final ItemGroup TAB = new ItemGroup("sm_basics") {
+    public static final ItemGroup BASICS = new ItemGroup("sm_basics") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.SILVER_BLOCK.get());
+        }
+    };
+
+    public static final ItemGroup INSTRUMENTS = new ItemGroup("sm_instruments") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(Registration.NECROMANTS_WAND_1.get());
+        }
+    };
+
+    public static final ItemGroup MISC = new ItemGroup("sm_misc") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.MAGIC_CLOTH.get());
         }
     };
 

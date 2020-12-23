@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "cac",
+    "aba",
+    "cac"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "b":
+    {
+      "item": "soulm:dark_metal"
+    },
+    "c":
+    {
+      "item": "minecraft:glass"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:dark_metal",
+    "count": 1
+  }
+}

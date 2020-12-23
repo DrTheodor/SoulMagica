@@ -15,41 +15,51 @@ public class ModItems {
 
     //just items
     public static final RegistryObject<Item> SILVER_INGOT = Registration.ITEMS.register("silver_ingot", () ->
-            new Item(new Item.Properties().group(SoulMagica.TAB)));
+            new Item(new Item.Properties().group(SoulMagica.MISC)));
     public static final RegistryObject<Item> DARK_METAL = Registration.ITEMS.register("dark_metal", () ->
-            new Item(new Item.Properties().group(SoulMagica.TAB).maxStackSize(16).rarity(Rarity.RARE)));
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> LIGHT_METAL = Registration.ITEMS.register("light_metal", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> DARK_LENSE = Registration.ITEMS.register("dark_lense", () ->
+            new Item(new Item.Properties().group(SoulMagica.BASICS).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> MAGIC_CLOTH = Registration.ITEMS.register("magic_cloth", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> DARK_STICK = Registration.ITEMS.register("dark_stick", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> DARK_METALLED_STICK = Registration.ITEMS.register("dark_metalled_stick", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
 
     //tools
 
     public static final RegistryObject<SwordItem> SILVER_SWORD = Registration.ITEMS.register("silver_sword", () ->
-            new SwordItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.TAB)));
+            new SwordItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<PickaxeItem> SILVER_PICKAXE = Registration.ITEMS.register("silver_pickaxe", () ->
-            new PickaxeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.TAB)));
+            new PickaxeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<AxeItem> SILVER_AXE = Registration.ITEMS.register("silver_axe", () ->
-            new AxeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.TAB)));
+            new AxeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<HoeItem> SILVER_HOE = Registration.ITEMS.register("silver_hoe", () ->
-            new HoeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.TAB)));
+            new HoeItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<ShovelItem> SILVER_SHOVEL = Registration.ITEMS.register("silver_shovel", () ->
-            new ShovelItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.TAB)));
+            new ShovelItem(ModItemTools.SILVER, 2, -2.4F, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
 
 
     //armor
     public static final RegistryObject<ArmorItem> NECROMANTS_HOOD = Registration.ITEMS.register("necromants_hood", () ->
-            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.HEAD, new Item.Properties().group(SoulMagica.TAB)));
+            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.HEAD, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<ArmorItem> NECROMANTS_CHESTPLATE = Registration.ITEMS.register("necromants_chestplate", () ->
-            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.CHEST, new Item.Properties().group(SoulMagica.TAB)));
+            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.CHEST, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<ArmorItem> NECROMANTS_LEGGINS = Registration.ITEMS.register("necromants_leggins", () ->
-            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.LEGS, new Item.Properties().group(SoulMagica.TAB)));
+            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.LEGS, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
     public static final RegistryObject<ArmorItem> NECROMANTS_BOOTS = Registration.ITEMS.register("necromants_boots", () ->
-            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.FEET, new Item.Properties().group(SoulMagica.TAB)));
+            new ArmorItem(ModArmorMaterial.DARK_METAL, EquipmentSlotType.FEET, new Item.Properties().group(SoulMagica.INSTRUMENTS)));
 
 
 
     //music discs
     public static final RegistryObject<Item> UNKNOWN_DISС_1 = Registration.ITEMS.register("unknown_disc_1", () ->
             new ModMusicDiscItem(0, SoundInit.LAZY_UNKNOWN_MUSIC_1.get(),
-                    new Item.Properties().group(SoulMagica.TAB).maxStackSize(1).rarity(Rarity.EPIC)));
+                    new Item.Properties().group(SoulMagica.BASICS).maxStackSize(1).rarity(Rarity.EPIC)));
 
     static void register() {}
 }

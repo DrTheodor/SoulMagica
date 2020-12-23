@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ece",
+    "ebe",
+    "aba"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:air"
+    },
+    "b":
+    {
+      "item": "soulm:dark_stick"
+    },
+    "c":
+    {
+      "item": "soulm:necromants_wand"
+    },
+    "e":
+    {
+      "item": "soulm:magic_cloth"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:necromants_wand_1",
+    "count": 1
+  }
+}

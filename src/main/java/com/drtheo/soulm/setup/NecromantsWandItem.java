@@ -18,10 +18,7 @@ import net.minecraft.item.ItemUseContext;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.math.*;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -49,9 +46,15 @@ public class NecromantsWandItem extends Item {
     private static DamageSource ds = new DamageSource("Vampirism");
 
     public void enableFly(PlayerEntity player) {
-        player.abilities.allowFlying=true;
-        player.abilities.isFlying = true;
-        Registration.flyOn = true;
+        if(!Registration.flyOn) {
+            player.abilities.allowFlying = true;
+            player.abilities.isFlying = true;
+            Registration.flyOn = true;
+        } else if(Registration.flyOn && !player.abilities.allowFlying) {
+            player.abilities.allowFlying = true;
+            player.abilities.isFlying = true;
+            Registration.flyOn = true;
+        }
     }
 
 
@@ -144,7 +147,7 @@ public class NecromantsWandItem extends Item {
         PlayerEntity player = context.getPlayer(); // получение игрока
         BlockPos pos = context.getPos(); // получить позицию блока
         Hand handIn = context.getHand();
-        if(player.getHeldItem(handIn).getItem() == Registration.NECROMANTS_WAND_1.get() && !Registration.flyOn) {
+        if(player.getHeldItem(handIn).getItem() == Registration.NECROMANTS_WAND_1.get()) {
             System.out.println("Fly enabled!");
             enableFly(player);
             return ActionResultType.SUCCESS;

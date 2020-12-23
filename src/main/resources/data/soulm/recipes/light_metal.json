@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bbb",
+    "bcb",
+    "bbb"
+  ],
+  "key":
+  {
+    "b":
+    {
+      "item": "soulm:silver_block"
+    },
+    "c":
+    {
+      "item": "soulm:unknown_disc_1"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:pentagram_altar",
+    "count": 1
+  }
+}

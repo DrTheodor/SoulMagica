@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aba",
+    "aca",
+    "aca"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:air"
+    },
+    "b":
+    {
+      "item": "minecraft:gold_block"
+    },
+    "c":
+    {
+      "item": "soulm:silver_block"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:healer_wand",
+    "count": 1
+  }
+}

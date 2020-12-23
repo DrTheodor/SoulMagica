@@ -10,6 +10,8 @@
   "block.soulm.silver_ore_nether": "Адско-серебрянная руда",
   "block.soulm.silver_ore_end": "Энд-серебрянная руда",
   "itemGroup.sm_basics": "Магия Душ — Основы",
+  "itemGroup.sm_instruments": "Магия Душ — Инструменты",
+  "itemGroup.sm_misc": "Магия Душ — Разное",
   "block.soulm.soul_charger": "Наполнитель душ",
   "container.soulm.soul_charger": "Наполнитель душ",
   "container.soulm.item_pedestal": "Мистический пьедестал",
@@ -27,5 +29,11 @@
   "item.soulm.necromants_boots": "Ботинки Некроманта",
   "item.soulm.healer_wand": "§lСветлая магическая палочка§r",
   "item.soulm.unknown_disc_1": "§kнеизвестный§r диск",
-  "item.soulm.unknown_disc_1.desc": "Странный диск..."
+  "item.soulm.unknown_disc_1.desc": "Странный диск...",
+  "item.soulm.dark_lense": "Тёмная линза",
+  "item.soulm.dark_stick": "Тёмная палка",
+  "item.soulm.light_metal": "Светлый металл",
+  "item.soulm.magic_cloth": "Магическая ткань",
+  "item.soulm.pentagram_altar": "Алтарь для создания пентаграмм",
+  "item.soulm.dark_metalled_stick": "Тёмная палка украшенная тёмным металлом"
 }

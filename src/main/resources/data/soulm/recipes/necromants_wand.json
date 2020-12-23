@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aba",
+    "aca",
+    "aca"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:air"
+    },
+    "b":
+    {
+      "item": "soulm:dark_lense"
+    },
+    "c":
+    {
+      "item": "soulm:dark_metalled_stick"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:necromants_wand",
+    "count": 1
+  }
+}

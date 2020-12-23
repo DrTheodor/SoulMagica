@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "soulm:items/dark_metal",
-		"particle": "soulm:items/dark_metal"
+		"0": "soulm:items/light_metal",
+		"particle": "soulm:items/light_metal"
 	},
 	"elements": [
 		{

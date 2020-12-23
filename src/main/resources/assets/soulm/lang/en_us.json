@@ -10,6 +10,8 @@
   "block.soulm.silver_ore_nether": "Nether Silver Ore",
   "block.soulm.silver_ore_end": "End Silver Ore",
   "itemGroup.sm_basics": "Soul Magica — Basics",
+  "itemGroup.sm_instruments": "Soul Magica — Instruments",
+  "itemGroup.sm_misc": "Soul Magica — Misc",
   "block.soulm.soul_charger": "Soul Charger",
   "container.soulm.soul_charger": "Soul Charger",
   "container.soulm.item_pedestal": "Item Pedestal",
@@ -27,5 +29,12 @@
   "item.soulm.necromants_boots": "Necromants Boots",
   "item.soulm.healer_wand": "§lLight Wand",
   "item.soulm.unknown_disc_1": "§kunknown§r Disc",
-  "item.soulm.unknown_disc_1.desc": "The strange disc..."
+  "item.soulm.unknown_disc_1.desc": "The strange disc...",
+  "item.soulm.magic_cloth": "Magic Fabric",
+  "item.soulm.dark_lense": "Dark Lense",
+  "item.soulm.dark_stick": "Dark Stick",
+  "item.soulm.light_metal": "Light Metal",
+  "item.soulm.magic_cloth": "Magic Fabric",
+  "item.soulm.pentagram_altar": "Pentagram Altar",
+  "item.soulm.dark_metalled_stick": "Dark stick decorated with §kdark§r metal"
 }
