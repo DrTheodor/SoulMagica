@@ -36,5 +36,11 @@
   "item.soulm.light_metal": "Light Metal",
   "item.soulm.magic_cloth": "Magic Fabric",
   "item.soulm.pentagram_altar": "Pentagram Altar",
-  "item.soulm.dark_metalled_stick": "Dark stick decorated with §kdark§r metal"
+  "item.soulm.dark_metalled_stick": "Dark stick decorated with §kdark§r metal",
+  "item.soulm.raw_goldver_ingot": "Raw gold-ver ingot",
+  "item.soulm.goldver_ingot": "Gold-ver ingot",
+  "item.soulm.goldver_matrix": "Gold-ver matrix",
+  "item.soulm.light_wand_crystal": "GV Crystal",
+  "item.soulm.light_wand": "Light wand",
+  "item.soulm.light_metalled_wand": "Light wand decorated with light metal"
 }

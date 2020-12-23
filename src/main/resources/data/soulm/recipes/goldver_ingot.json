@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "soulm:raw_goldver_ingot"
+  },
+  "result": "soulm:goldver_ingot",
+  "experience": 3.5,
+  "cookingtime": 200
+}

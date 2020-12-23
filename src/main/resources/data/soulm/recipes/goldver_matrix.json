@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bcb",
+    "cac",
+    "bcb"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:goldver_ingot"
+    },
+    "b":
+    {
+      "item": "minecraft:redstone"
+    },
+    "c":
+    {
+      "item": "minecraft:glass"
+    }
+  },
+  "result":
+  {
+    "item": "soulm:goldver_matrix",
+    "count": 2
+  }
+}

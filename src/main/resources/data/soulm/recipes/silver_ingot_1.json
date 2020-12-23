@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredient": [
+  "ingredients": [
     {
       "item": "soulm:silver_block"
     }

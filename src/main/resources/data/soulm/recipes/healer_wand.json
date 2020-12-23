@@ -14,11 +14,11 @@
     },
     "b":
     {
-      "item": "minecraft:gold_block"
+      "item": "soulm:light_wand_crystal"
     },
     "c":
     {
-      "item": "soulm:silver_block"
+      "item": "soulm:light_metalled_stick"
     }
   },
   "result":

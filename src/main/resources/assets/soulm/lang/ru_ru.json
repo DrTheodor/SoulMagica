@@ -35,5 +35,11 @@
   "item.soulm.light_metal": "Светлый металл",
   "item.soulm.magic_cloth": "Магическая ткань",
   "item.soulm.pentagram_altar": "Алтарь для создания пентаграмм",
-  "item.soulm.dark_metalled_stick": "Тёмная палка украшенная тёмным металлом"
+  "item.soulm.dark_metalled_stick": "Тёмная палка украшенная тёмным металлом",
+  "item.soulm.raw_goldver_ingot": "Сырой золо-серебрянный слиток",
+  "item.soulm.goldver_ingot": "Золо-серебрянный слиток",
+  "item.soulm.goldver_matrix": "Золо-серебрянная матрица",
+  "item.soulm.light_wand_crystal": "ЗС Кристалл",
+  "item.soulm.light_wand": "Светлая палка",
+  "item.soulm.light_metalled_wand": "Светлая палка украшенная светлым металлом"
 }

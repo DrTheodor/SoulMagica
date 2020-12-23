@@ -2,28 +2,28 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "bab",
-    "aca",
-    "bab"
+    "bcb",
+    "cac",
+    "bcb"
   ],
   "key":
   {
     "a":
     {
-      "item": "soulm:light_leaves"
+      "item": "soulm:goldver_matrix"
     },
     "b":
     {
-      "item": "soulm:light_log"
+      "item": "minecraft:quartz_block"
     },
     "c":
     {
-      "item": "soulm:silver_block"
+      "item": "minecraft:glass"
     }
   },
   "result":
   {
-    "item": "soulm:light_metal",
+    "item": "soulm:light_wand_crystal",
     "count": 1
   }
 }

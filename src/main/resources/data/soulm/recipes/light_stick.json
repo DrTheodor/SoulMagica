@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "soulm:light_log"
+    },
+    {
+      "item": "soulm:light_log"
+    },
+    {
+      "item": "soulm:light_log"
+    }
+  ],
+  "result":
+  {
+    "item": "soulm:light_stick",
+    "count": 1
+  }
+}

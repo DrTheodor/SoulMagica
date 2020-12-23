@@ -30,6 +30,19 @@ public class ModItems {
     public static final RegistryObject<Item> DARK_METALLED_STICK = Registration.ITEMS.register("dark_metalled_stick", () ->
             new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> LIGHT_STICK = Registration.ITEMS.register("light_stick", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> LIGHT_METALLED_STICK = Registration.ITEMS.register("light_metalled_stick", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> RAW_GOLDVER_INGOT = Registration.ITEMS.register("raw_goldver_ingot", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> GOLDVER_INGOT = Registration.ITEMS.register("goldver_ingot", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> GOLDVER_MATRIX = Registration.ITEMS.register("goldver_matrix", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> LIGHT_WAND_CRYSTAL = Registration.ITEMS.register("light_wand_crystal", () ->
+            new Item(new Item.Properties().group(SoulMagica.MISC).maxStackSize(16).rarity(Rarity.RARE)));
+
     //tools
 
     public static final RegistryObject<SwordItem> SILVER_SWORD = Registration.ITEMS.register("silver_sword", () ->
