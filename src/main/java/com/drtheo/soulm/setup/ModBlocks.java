@@ -46,7 +46,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIGHT_LEAVES = register("light_leaves",
             () -> new LeavesBlock(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)));
 
-
+    public static final RegistryObject<LadderBlock> CRIMSON_LADDER = register("crimson_ladder",
+            () -> new LadderBlock(AbstractBlock.Properties.from(Blocks.LADDER)));
 
 
 

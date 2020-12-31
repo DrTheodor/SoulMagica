@@ -1,10 +1,10 @@
 {
-  "disc.unknown_disc_1": {
+  "disc.unknown_1": {
     "category": "disс",
     "subtitle": "unknown_disc_1",
     "sounds": [
       {
-        "name": "soulm:disс/unknown_disc_1",
+        "name": "soulm:disс/unknown_music_1",
         "stream": true
       }
     ]

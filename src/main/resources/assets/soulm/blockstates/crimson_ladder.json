@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "soulm:block/crimson_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "soulm:block/crimson_ladder"
+    },
+    "facing=south": {
+      "model": "soulm:block/crimson_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "soulm:block/crimson_ladder",
+      "y": 270
+    }
+  }
+}

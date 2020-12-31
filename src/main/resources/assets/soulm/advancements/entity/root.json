@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": {
+      "translate": "advancements.tutorial.root.title"
+    },
+    "description": {
+      "translate": "advancements.tutorial.root.description"
+    },
+    "background": "soulm:textures/gui/advancements/back.png",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cured_zombie_villager": {
+      "trigger": "minecraft:cured_zombie_villager"
+    },
+    "killed_something": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [["cured_zombie_villager", "killed_something"]]
+}

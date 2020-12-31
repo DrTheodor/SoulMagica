@@ -2,7 +2,6 @@ package com.drtheo.soulm.world.gen;
 import com.drtheo.soulm.SoulMagica;
 import com.drtheo.soulm.setup.ModBlocks;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;

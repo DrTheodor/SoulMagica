@@ -1,7 +1,6 @@
 package com.drtheo.soulm.setup.pedestals;
 
 import com.drtheo.soulm.SoulMagica;
-import com.drtheo.soulm.setup.Registration;
 import com.drtheo.soulm.setup.gui.ItemPedestalScreen;
 import com.drtheo.soulm.setup.gui.PentagramAltarScreen;
 import com.drtheo.soulm.setup.gui.SoulChargerScreen;
@@ -9,7 +8,6 @@ import com.drtheo.soulm.setup.gui.SoulChargerScreen;
 import com.drtheo.soulm.setup.pedestals.itempedestal.ItemPedestalRenderer;
 import com.drtheo.soulm.setup.pedestals.soulcharger.SoulChargerRenderer;
 import net.minecraft.client.gui.ScreenManager;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;

@@ -4,6 +4,8 @@ import com.drtheo.soulm.setup.pedestals.itempedestal.ItemPedestalTileEntity;
 import com.drtheo.soulm.setup.pedestals.soulcharger.SoulChargerTileEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.util.InputMappings;
 import net.minecraft.command.arguments.NBTTagArgument;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -28,6 +30,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.event.TickEvent;
@@ -38,6 +42,8 @@ import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.lwjgl.glfw.GLFW;
+import org.lwjgl.glfw.GLFWWindowFocusCallback;
 
 import javax.annotation.Nonnull;
 import java.util.List;
@@ -231,5 +237,11 @@ public class HealerWandItem extends Item {
             }
         }
         return ActionResultType.FAIL;
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
+    {
+        tooltip.add(new StringTextComponent("Magic wand that can heal anyone and hurt undead..."));
     }
 }
