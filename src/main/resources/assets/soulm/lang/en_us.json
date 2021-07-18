@@ -42,5 +42,6 @@
   "item.soulm.goldver_matrix": "Gold-ver matrix",
   "item.soulm.light_wand_crystal": "GV Crystal",
   "item.soulm.light_wand": "Light wand",
-  "item.soulm.light_metalled_wand": "Light wand decorated with light metal"
+  "item.soulm.light_metalled_wand": "Light wand decorated with light metal",
+  "item.soulm.test_soul": "Test Soul"
 }
